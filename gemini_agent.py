@@ -1,7 +1,5 @@
 import os
 import streamlit as st
-from dotenv import load_dotenv
-
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_community.tools import DuckDuckGoSearchRun
 from langchain.agents import create_react_agent
@@ -10,7 +8,6 @@ from langchain.prompts import PromptTemplate
 from langchain_core.globals import set_debug
 
 
-load_dotenv()
 set_debug(True)
 
 st.set_page_config(page_title="Gemini Python Agent", layout="wide")
